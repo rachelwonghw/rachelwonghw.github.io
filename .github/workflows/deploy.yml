@@ -30,5 +30,7 @@ jobs:
     - name: deploy to gh pages
       uses: peaceiris/actions-gh-pages@v3
       with:
+        base_branch: master # The branch the action should deploy from.
+        branch: gh-pages
         github_token: ${{ secrets.DEPLOY_KEY }}
         publish_dir: ./build

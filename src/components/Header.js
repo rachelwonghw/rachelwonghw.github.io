@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <Navbar dark expand='md' className='bg-transparent' fixed='top'>
-      <NavbarBrand href="/">Rachel Wong</NavbarBrand>
+      <NavbarBrand href="/">rachelwonghw</NavbarBrand>
       <NavbarToggler onClick={onToggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav navbar className='ml-auto'>

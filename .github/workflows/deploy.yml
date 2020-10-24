@@ -32,5 +32,5 @@ jobs:
       with:
         base_branch: master # The branch the action should deploy from.
         branch: gh-pages
-        github_token: ${{ secrets.DEPLOY_KEY }}
-        publish_dir: ./build
+        deploy_key: ${{ secrets.ACTION_DEPLOY_KEY }}
+        publish_dir: ./public

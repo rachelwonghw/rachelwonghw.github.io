@@ -26,11 +26,11 @@ jobs:
         yarn --frozen-lockfile
     - name: build app
       run:
-        yarn run build
+        yarn run deploy
     - name: deploy to gh pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         deploy_key: ${{ secrets.ACTION_DEPLOY_KEY }}
-        publish_dir: ./public
+        publish_dir: ./build
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'

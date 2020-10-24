@@ -24,6 +24,10 @@ jobs:
     - name: Install dependencies
       run:
         yarn --frozen-lockfile
+    - name: setup git
+      run: |
+        git config --global user.email "hello@rachelwonghw.com"
+        git config --global user.name "Rachel Wong"
     - name: build app
       run:
         yarn run deploy

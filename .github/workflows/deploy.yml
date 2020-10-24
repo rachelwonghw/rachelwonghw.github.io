@@ -21,10 +21,14 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: |
+    - name: Install dependencies
+      run:
         yarn --frozen-lockfile
-        git config --global user.email "hello@rachelwonghw.com"	
-        git config --global user.name "Rachel Wong"	
-        git remote set-url origin https://${{ secrets.DEPLOY_KEY }}@github.com/rachelwonghw/rachelwonghw-rewrite.git
-        yarn run predeploy
-        yarn run deploy
+    - name: build app
+      run:
+        yarn run build
+    - name: deploy to gh pages
+      uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
+          publish_dir: ./build

@@ -33,6 +33,7 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         deploy_key: ${{ secrets.ACTION_DEPLOY_KEY }}
+        personal_token: ${{ secrets.DEPLOY_TOKEN }}
         publish_branch: gh-pages
         publish_dir: ./public
         user_name: 'github-actions[bot]'

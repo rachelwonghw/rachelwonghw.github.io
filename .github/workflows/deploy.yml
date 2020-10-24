@@ -28,9 +28,6 @@ jobs:
       run: |
         git config --global user.email "hello@rachelwonghw.com"
         git config --global user.name "Rachel Wong"
-    - name: build app
-      run:
-        yarn run deploy
     - name: deploy to gh pages
       uses: peaceiris/actions-gh-pages@v3
       with:

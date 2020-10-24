@@ -22,7 +22,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: |
-        yarn add
+        yarn install
         git config --global user.email "hello@rachelwonghw.com"
         git config --global user.name "Rachel Wong"
         git remote set-url origin https://${{secrets.deploy_key}}@github.com/rachelwonghw/rachelwonghw-rewrite.git

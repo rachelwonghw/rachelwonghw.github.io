@@ -2,18 +2,22 @@ import React from 'react';
 import './App.css';
 import Header  from './components/Header';
 import Home from './pages/Home';
-import { BrowserRouter, Route } from 'react-router-dom';
+import About from './pages/About';
+import Footer from './components/Footer';
+// import { BrowserRouter, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    // <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Header />
-        <Route exact path='/'>
+        {/* <Route exact path='/'> */}
           <Home />
-        </Route>
+          <About />
+          <Footer />
+        {/* </Route> */}
       </div>
-    </BrowserRouter>
+    // </BrowserRouter>
   );
 }
 

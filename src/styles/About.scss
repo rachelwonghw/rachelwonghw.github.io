@@ -1,0 +1,22 @@
+.about {
+  &-background {
+    background-color: #94C1EA;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-headshot {
+    width: 396px;
+    height: 476px;
+    float: left;
+  }
+
+  &-intro {
+    margin-left: 60px;
+    width: 400px;
+    text-align: justify;
+  }
+}

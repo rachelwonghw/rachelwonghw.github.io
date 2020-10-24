@@ -27,13 +27,13 @@ const Header = () => {
             <NavLink href='/'>Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href='/about'>About</NavLink>
+            <NavLink href='#about'>About</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href='/employment'>Employment</NavLink>
+            <NavLink href='#employment'>Employment</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href='/contact'>Contact</NavLink>
+            <NavLink href='#contact'>Contact</NavLink>
           </NavItem>
         </Nav>
       </Collapse>

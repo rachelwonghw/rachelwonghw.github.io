@@ -28,16 +28,7 @@ jobs:
       run: |
         git config --global user.email "hello@rachelwonghw.com"
         git config --global user.name "Rachel Wong"
-    - name: deploy to gh pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        deploy_key: ${{ secrets.ACTION_DEPLOY_KEY }}
-        personal_token: ${{ secrets.DEPLOY_TOKEN }}
-        publish_branch: gh-pages
-        publish_dir: ./public
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
-        enable_jekyll: true
-        keep_files: true
-        force_orphan: true
+        git remote set-url origin https://${{secrets.DEPLOY_TOKEN}}@github.com/rachelwonghw/rachelwonghw-rewrite.git
+    - name: deploy
+      run:
+        yarn run deploy

@@ -12,7 +12,7 @@ const About = () => {
       <div className='about-intro'>
         <h1>About Me</h1>
         <p>I'm a 3B Computer Engineering student at the University of Waterloo currently working as a analytics engineer at Scotiabank. </p>
-        <p>When I'm not in school, you will most likely catch me walking around with my camera, cooking new dishes or listening to music.</p>
+        <p>When I'm not in school, you will most likely catch me exploring with my camera, cooking new dishes or listening to music.</p>
       </div>
     </div>
   );

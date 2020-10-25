@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/rachelwonghw-rewrite/static/css/main.049a9d8a.chunk.css",
+    "main.js": "/rachelwonghw-rewrite/static/js/main.0d390b67.chunk.js",
+    "main.js.map": "/rachelwonghw-rewrite/static/js/main.0d390b67.chunk.js.map",
+    "runtime-main.js": "/rachelwonghw-rewrite/static/js/runtime-main.926c76ad.js",
+    "runtime-main.js.map": "/rachelwonghw-rewrite/static/js/runtime-main.926c76ad.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/rachelwonghw-rewrite/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.ee9e6503.chunk.js": "/rachelwonghw-rewrite/static/js/2.ee9e6503.chunk.js",
+    "static/js/2.ee9e6503.chunk.js.map": "/rachelwonghw-rewrite/static/js/2.ee9e6503.chunk.js.map",
+    "static/js/3.3f8016d8.chunk.js": "/rachelwonghw-rewrite/static/js/3.3f8016d8.chunk.js",
+    "static/js/3.3f8016d8.chunk.js.map": "/rachelwonghw-rewrite/static/js/3.3f8016d8.chunk.js.map",
+    "index.html": "/rachelwonghw-rewrite/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/rachelwonghw-rewrite/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.049a9d8a.chunk.css.map": "/rachelwonghw-rewrite/static/css/main.049a9d8a.chunk.css.map",
+    "static/js/2.ee9e6503.chunk.js.LICENSE.txt": "/rachelwonghw-rewrite/static/js/2.ee9e6503.chunk.js.LICENSE.txt",
+    "static/media/Home.scss": "/rachelwonghw-rewrite/static/media/background.01d3a8ce.jpg",
+    "static/media/Contact.scss": "/rachelwonghw-rewrite/static/media/contact_backdrop.48977561.jpg",
+    "static/media/cropped_headshot.485afc97.jpg": "/rachelwonghw-rewrite/static/media/cropped_headshot.485afc97.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.926c76ad.js",
+    "static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.ee9e6503.chunk.js",
+    "static/css/main.049a9d8a.chunk.css",
+    "static/js/main.0d390b67.chunk.js"
+  ]
+}

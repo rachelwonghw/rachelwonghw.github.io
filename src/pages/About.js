@@ -1,13 +1,15 @@
 import React from 'react';
 import '../styles/About.scss';
-import { Card, CardImg } from 'reactstrap';
+import Card from 'react-bootstrap/Card';
 import headshot from '../assets/cropped_headshot.jpg';
 
 const About = () => {
   return (
     <div id='about' className='about-background'>
       <Card className='about-headshot'>
-        <CardImg src={headshot} />
+        <Card.Body>
+          <Card.Img src={headshot} />
+        </Card.Body>
       </Card>
       <div className='about-intro'>
         <h1>About Me</h1>

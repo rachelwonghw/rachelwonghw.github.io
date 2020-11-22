@@ -11,7 +11,7 @@ const Home = () => {
         </div>
         <div className='home-font home-position float-right'>
           <ReactTypingEffect
-            text={["Web Developer", "Adventurer", "Tech Enthusiast"]}
+            text={["Web Developer", "Amateur Photographer", "Tech Enthusiast"]}
             speed={200}
             eraseSpeed={200}
             eraseDelay={2000}

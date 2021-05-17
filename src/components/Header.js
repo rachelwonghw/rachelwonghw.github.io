@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Linkedin, GitHub, Mail, FileText } from 'react-feather';
-import Resume from '../assets/ResumeRachelWong.pdf';
 import '../styles/Header.scss';
 
 const Header = () => {
@@ -19,7 +18,7 @@ const Header = () => {
       <Navbar.Collapse isOpen={isOpen} navbar>
         <Nav navbar className='ml-auto'>
           <Nav.Item>
-            <Nav.Link href={Resume} target="_blank"><FileText color="white" /></Nav.Link>
+            <Nav.Link href={`${process.env.PUBLIC_URL}/ResumeRachelWong.pdf`} target="_blank"><FileText color="white" /></Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link href='https://github.com/rachelwonghw'><GitHub color="white" /></Nav.Link>

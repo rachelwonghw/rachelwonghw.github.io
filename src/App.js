@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 import Header  from './components/Header';
-import Home from './pages/Home';
+// import Home from './pages/Home';
 import About from './pages/About';
 import Footer from './components/Footer';
-import Contact from './pages/Contact';
+// import Contact from './pages/Contact';
 // import { BrowserRouter, Route } from 'react-router-dom';
 
 function App() {
@@ -13,9 +13,8 @@ function App() {
       <div className="App">
         <Header />
         {/* <Route exact path='/'> */}
-          <Home />
+          {/* <Home /> */}
           <About />
-          <Contact />
           <Footer />
         {/* </Route> */}
       </div>

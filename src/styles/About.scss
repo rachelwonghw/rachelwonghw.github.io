@@ -1,6 +1,6 @@
 .about {
   &-background {
-    background-color: #94C1EA;
+    background-color: hsl(0, 57%, 91%);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -15,5 +15,18 @@
 
   &-intro {
     text-align: justify;
+    color: #FFFFFF;
+    > h1 {
+      font-style: italic;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 42px;
+    }
+    > p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 }

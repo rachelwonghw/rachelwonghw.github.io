@@ -4,7 +4,7 @@ import '../styles/Footer.scss';
 const Footer = () => {
   return (
       <div className='footer'>
-        © Rachel Wong | 2020
+        © Rachel Wong | 2021
       </div>
   );
 }

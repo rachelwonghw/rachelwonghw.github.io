@@ -18,16 +18,16 @@ const Header = () => {
       <Navbar.Collapse isOpen={isOpen} navbar>
         <Nav navbar className='ml-auto'>
           <Nav.Item>
-            <Nav.Link href={`${process.env.PUBLIC_URL}/ResumeRachelWong.pdf`} target="_blank"><FileText color="white" /></Nav.Link>
+            <Nav.Link href={`${process.env.PUBLIC_URL}/ResumeRachelWong.pdf`} target="_blank"><FileText color="#756c75" /></Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href='https://github.com/rachelwonghw'><GitHub color="white" /></Nav.Link>
+            <Nav.Link href='https://github.com/rachelwonghw'><GitHub color="#756c75" /></Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href='mailto:hello@rachelwonghw.com'><Mail color="white" /></Nav.Link>
+            <Nav.Link href='mailto:hello@rachelwonghw.com'><Mail color="#756c75" /></Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href='https://www.linkedin.com/in/rachelwonghw/'><Linkedin color="white" /></Nav.Link>
+            <Nav.Link href='https://www.linkedin.com/in/rachelwonghw/'><Linkedin color="#756c75" /></Nav.Link>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>

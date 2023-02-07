@@ -1,34 +1,26 @@
-name: Deploy
-
+name: Build and Deploy
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
+permissions:
+contents: write  
 jobs:
-  build:
-
+  build-and-deploy:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [16.x]
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Set-up Node
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install dependencies
+        node-version: "16.x"
+    - name: Install and Build
       run:
-        yarn --frozen-lockfile
-    - name: setup git
-      run: |
-        git config --global user.email "hello@rachelwonghw.com"
-        git config --global user.name "Rachel Wong"
-        git remote set-url origin https://${{secrets.DEPLOY_TOKEN}}@github.com/rachelwonghw/rachelwonghw.github.io.git
-    - name: deploy
-      run:
-        yarn run deploy
+        yarn build
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: public
+        ssh-key: ${{ secrets.DEPLOY_TOKEN }}

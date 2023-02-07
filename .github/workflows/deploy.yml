@@ -27,5 +27,5 @@ jobs:
       with:
         branch: gh-pages
         folder: build
-        ssh-key: ${{ secrets.DEPLOY_TOKEN }}
+        ssh-key: ${{ secrets.DEPLOY_KEY }}
         target-folder: public
